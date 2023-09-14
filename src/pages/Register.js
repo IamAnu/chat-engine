@@ -1,4 +1,6 @@
 import React from 'react'
+// import './style.scss'
+import Add from '../images/avatar.webp';
 
 function Register() {
   return (
@@ -10,7 +12,12 @@ function Register() {
             <input type='text' placeholder='Enter Name'/>
             <input type='email' placeholder='name@gmail.com'/>
             <input type='password' placeholder='password'/>
-            <input type='file'/>
+            <input style={{display:'none'}} type='file' id='file'/>
+            <label htmlFor='file'>
+                {/* Change this avatar later */}
+                <img src={Add} alt=''/>
+                <span>Add an avatar</span>
+            </label>
             <button> Sign up </button>
         </form>
         <p>Do you have an account ? login</p>
