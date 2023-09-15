@@ -187,9 +187,138 @@
     }
     .chat{
       flex: 2;
-      border: 1px silver
+      // border: 1px silver 
+
+      .chatInfo{
+        height: 50px;
+        background-color: #5d5b8d;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        color: lightgrey;
+      }
+      .chatIcons{
+        display: flex;
+        gap: 10px;
+        // color: aliceblue;
+
+        img{
+          height: 24px;
+          cursor: pointer;
+          color: aliceblue;
+        }
+
+      }
+      .messages{
+        background-color: #ddddf7;
+        // padding: 10px;
+        height: calc(100% - 140px);
+        overflow: scroll;
+
+        .message{
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+      
+          .messageInfo{
+            display: flex;
+            flex-direction: column;
+            color: #646b70;;
+            font-weight: 300;
+            // align-items: center;
+            // gap: 10px;
+
+            img{
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .messageContent{
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p{
+              background-color: #fff;
+              padding: 10px 20px;
+              border-radius: 0px 10px 10px 10px;
+              max-width: max-content;
+            }
+
+            img{
+              width: 50%;
+            }
+          }
+          // 
+          &.owner{
+            flex-direction: row-reverse;
+            .messageContent{
+
+              align-items: flex-end;
+
+              p{
+                background-color: #8da4f1;
+                color: #fff;
+                border-radius: 10px 0px 10px 10px;
+              }
+            }
+            
+          }
+
+        }
+      }
+
+      .input{
+        height: 50px;
+        background-color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // position: fixed;
+        //   width: 50%;
+        //   bottom: 10px;
+        // cursor: pointer;
+
+        input{
+          width: 100%;
+          border: none;
+          outline: none;
+          color: #2f2d52;
+          font-size: 18px;
+          
+
+          &::placeholder{
+            color: lightgrey;
+          }
+        }
+      }
+      .send{
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img{
+          height: 24px;
+          cursor: pointer;
+        }
+
+        button{
+          border: none;
+          padding: 10px 15px;
+          color: #ddddf7;
+          background-color: #8da4f1;
+        }
+      }
 
     }
+
   }
 
 }
