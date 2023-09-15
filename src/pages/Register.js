@@ -1,5 +1,4 @@
 import React from 'react'
-// import './style.scss'
 import Add from '../images/avatar.webp';
 
 function Register() {
@@ -22,9 +21,6 @@ function Register() {
         </form>
         <p>Do you have an account ? login</p>
       </div>
-
-
-
     </div>
   )
 }
